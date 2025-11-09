@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README Preview</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.5;
+      color: #24292e;
+      background-color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+    h1 {
+      font-size: 2em;
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: .3em;
+    }
+    h2 {
+      font-size: 1.5em;
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: .3em;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    ul {
+      padding-left: 2em;
+    }
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      padding: .2em .4em;
+      margin: 0;
+      font-size: 85%;
+      background-color: rgba(27,31,35,.05);
+      border-radius: 3px;
+    }
+    pre {
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f6f8fa;
+      border-radius: 3px;
+    }
+    pre code {
+      display: inline;
+      padding: 0;
+      margin: 0;
+      overflow: visible;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>EncDec App 🔒</h1>
+    <p>
+      <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
+      <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+      <img src="https://img.shields.io/github/stars/your-username/your-repo?style=for-the-badge" alt="GitHub stars">
+    </p>
+    <p>A simple yet powerful file encryption and decryption app built with Flutter. It uses AES-256-GCM encryption with a unique "Twist 2.0" feature to provide strong security for your files.</p>
+    <h2>✨ Features</h2>
+    <ul>
+      <li><strong>Strong Encryption:</strong> Uses AES-256-GCM, a modern and secure authenticated encryption algorithm.</li>
+      <li><strong>"Twist 2.0" Security:</strong> An additional layer of security that scrambles your data with a unique key derived from your passphrase and the file's metadata. This makes the encryption even more resistant to attacks.</li>
+      <li><strong>PBKDF2 Key Derivation:</strong> Protects your passphrase against brute-force attacks using the industry-standard PBKDF2 algorithm.</li>
+      <li><strong>Cross-Platform:</strong> Built with Flutter, it works on Android, iOS, Windows, macOS, and Linux.</li>
+      <li><strong>User-Friendly:</strong> A simple and intuitive user interface for easy file encryption and decryption.</li>
+      <li><strong>Streaming Support:</strong> Encrypts and decrypts large files efficiently without consuming a lot of memory.</li>
+    </ul>
+    <h2>📸 Screenshots</h2>
+    <p><em>(Add your app screenshots here)</em></p>
+    <h2>🚀 Getting Started</h2>
+    <p>To get a local copy up and running, follow these simple steps.</p>
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><a href="https://flutter.dev/docs/get-started/install">Flutter SDK</a></li>
+    </ul>
+    <h3>Installation</h3>
+    <ol>
+      <li>Clone the repo
+        <pre><code>sh
+git clone https://github.com/your-username/your-repo.git
+</code></pre>
+      </li>
+      <li>Install packages
+        <pre><code>sh
+flutter pub get
+</code></pre>
+      </li>
+      <li>Run the app
+        <pre><code>sh
+flutter run
+</code></pre>
+      </li>
+    </ol>
+    <h2>📖 How to Use</h2>
+    <ol>
+      <li><strong>Enter a Passphrase:</strong> This will be used to encrypt and decrypt your files. Make sure to use a strong and memorable passphrase.</li>
+      <li><strong>Select an Input File:</strong> Tap the "Select Input File" button to choose the file you want to encrypt or decrypt.</li>
+      <li><strong>Start:</strong> Tap the "Start" button to begin the encryption or decryption process.</li>
+      <li><strong>Choose Output Location:</strong> You will be prompted to choose a location to save the output file.</li>
+    </ol>
+    <h2>🛡️ Security</h2>
+    <p>This app takes security seriously. Here's a breakdown of the security features:</p>
+    <ul>
+      <li><strong>AES-256-GCM:</strong> The core encryption algorithm is AES-256-GCM, which is a widely used and secure authenticated encryption algorithm. It not only encrypts your data but also ensures its integrity.</li>
+      <li><strong>PBKDF2:</strong> The encryption key is derived from your passphrase using PBKDF2 with 100,000 iterations. This makes it very difficult for an attacker to guess your passphrase using brute-force attacks.</li>
+      <li><strong>"Twist 2.0":</strong> This is a custom feature that adds an extra layer of security. It generates a unique keystream for each file based on your passphrase and the file's name and size. This keystream is then XORed with your data before encryption, making the ciphertext unique for each file and more resistant to analysis.</li>
+    </ul>
+    <h2>🤝 Contributing</h2>
+    <p>Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are <strong>greatly appreciated</strong>.</p>
+    <ol>
+      <li>Fork the Project</li>
+      <li>Create your Feature Branch (<code>git checkout -b feature/AmazingFeature</code>)</li>
+      <li>Commit your Changes (<code>git commit -m 'Add some AmazingFeature'</code>)</li>
+      <li>Push to the Branch (<code>git push origin feature/AmazingFeature</code>)</li>
+      <li>Open a Pull Request</li>
+    </ol>
+    <h2>📄 License</h2>
+    <p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>
+  </div>
+</body>
+</html>

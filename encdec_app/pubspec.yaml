@@ -1,0 +1,34 @@
+name: encdec_app
+description: AES-256-GCM file encrypt/decrypt app with persistent lockout
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  device_preview: ^1.2.0
+  file_picker: ^10.3.3
+  encrypt: ^5.0.3
+
+  shared_preferences: ^2.5.3
+  pointycastle: ^3.6.2
+  path_provider: ^2.0.16
+  permission_handler: ^12.0.1
+  async: ^2.11.0
+
+  cryptography: ^2.5.0
+
+dependency_overrides:
+  shared_preferences_platform_interface: ^2.0.0
+  path_provider_platform_interface: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true

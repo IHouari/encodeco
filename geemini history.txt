@@ -1,0 +1,4 @@
+> /chat save <gemini-31-10-2025_conv>
+
+
+ℹConversation checkpoint saved with tag: <gemini-31-10-2025_conv>.
